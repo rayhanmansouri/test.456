@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kombiniert</title>
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <h1>Full – Hoch & Runter</h1>
+  <button onclick='this.innerText=++window.a||1'>⬆</button> <button onclick='window.b=window.b||100;this.innerText=--window.b'>⬇</button>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</body>
+</html>
